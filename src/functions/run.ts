@@ -3,7 +3,7 @@ import { rootSchema, unionSchema } from '../validations/union';
 
 import { Rule } from '../types/rule';
 import { generateError } from 'zod-error';
-import get from 'lodash.get';
+import { get } from 'lodash';
 import { isArrayLengthRuleValid } from './is-array-length-rule-valid';
 import { isArrayValueRuleValid } from './is-array-value-rule-valid';
 import { isBooleanRuleValid } from './is-boolean-rule-valid';

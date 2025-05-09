@@ -19,8 +19,10 @@
     "@types/jest": "^29.5.14",
     "@types/lodash": "^4.17.13",
     "@types/node": "^22.9.1",
+    "@types/uuid": "^9.0.1",
     "@typescript-eslint/eslint-plugin": "^5.54.0",
     "@typescript-eslint/parser": "^5.54.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.35.0",
     "eslint-config-prettier": "^8.6.0",
     "jest": "^29.7.0",
@@ -30,8 +32,14 @@
   },
   "dependencies": {
     "lodash": "^4.17.21",
-    "nanoid": "^5.0.8",
-    "zod": "^3.23.8"
+    "uuid": "^9.0.0",
+    "zod": "^3.23.8",
+    "zod-error": "^1.5.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
