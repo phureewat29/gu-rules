@@ -1,5 +1,7 @@
 <div align="center">
 
+<h1>GU RULES!</h1>
+
 [![Status](https://img.shields.io/badge/status-active-blue)](https://github.com/phureewat29/gu-rules)
 [![GitHub Issues](https://img.shields.io/github/issues/phureewat29/gu-rules?color=blue)](https://github.com/phureewat29/gu-rules/issues)
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/phureewat29/gu-rules?color=blue)](https://github.com/phureewat29/gu-rules/pulls)
