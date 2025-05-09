@@ -22,7 +22,6 @@
 - [Usage](#usage)
 - [Rules Specification](#rule-specification)
 - [TypeScript Usage](#typescript-usage)
-- [Authors](#authors)
 
 ## About
 
@@ -1005,9 +1004,3 @@ console.log(unionAfterAdding);
   "rules": []
 }
 ```
-
-## Authors
-
-- [@phureewat29](https://github.com/phureewat29) - Idea & Initial work.
-
-See also the list of [contributors](https://github.com/phureewat29/gu-rules/contributors) who participated in this project.
