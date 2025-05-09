@@ -18,7 +18,6 @@
 - [About](#about)
 - [Terminology](#terminology)
 - [Basic Usage](#basic-usage)
-- [UI Implementation Example](#ui-implementation-example)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Rules Specification](#rule-specification)
@@ -143,59 +142,6 @@ This is what the state of the Rule Engine looks like:
           "operator": "equals_to",
           "value": "alice",
           "ignore_case": true
-        }
-      ]
-    }
-  ]
-}
-```
-
-## UI Implementation Example
-
-![rules-engine-ui-example](https://user-images.githubusercontent.com/48583281/225781473-7ab13ad4-901f-44c6-bd1d-1ac2832106a2.gif)
-
-The rules can then be persisted into a database in JSON format:
-
-```json
-{
-  "entity": "root_union",
-  "id": "598444ae-032c-4ae5-85da-644cf90ab920",
-  "connector": "or",
-  "rules": [
-    {
-      "entity": "rule",
-      "id": "03fcb9b5-a3fe-4d63-97f3-dfce431c331d",
-      "parent_id": "598444ae-032c-4ae5-85da-644cf90ab920",
-      "type": "string",
-      "field": "user_display_name",
-      "operator": "equals_to",
-      "value": "Alice",
-      "ignore_case": true
-    },
-    {
-      "id": "d60639aa-8239-40c7-9cc3-ec89f8f8c58d",
-      "entity": "union",
-      "connector": "and",
-      "parent_id": "598444ae-032c-4ae5-85da-644cf90ab920",
-      "rules": [
-        {
-          "entity": "rule",
-          "id": "1821d9da-9f37-4689-a118-bf436ca37e89",
-          "parent_id": "d60639aa-8239-40c7-9cc3-ec89f8f8c58d",
-          "type": "string",
-          "field": "user_display_name",
-          "operator": "equals_to",
-          "value": "Bob",
-          "ignore_case": true
-        },
-        {
-          "entity": "rule",
-          "id": "c2a058ab-6005-44a4-94ae-b75736dce536",
-          "parent_id": "d60639aa-8239-40c7-9cc3-ec89f8f8c58d",
-          "type": "number",
-          "field": "total_challenges",
-          "operator": "greater_than_or_equal_to",
-          "value": 5
         }
       ]
     }
